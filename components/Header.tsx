@@ -10,7 +10,7 @@ const Header = () => {
 			<div className='container header-wrapper'>
 				<Link href='/'>
 					<Image
-						src='assets/icons/logo.svg'
+						src='/assets/icons/logo.svg'
 						alt='Logo'
 						width={140}
 						height={32}
