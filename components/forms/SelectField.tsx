@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Label } from '@/components//ui/label';
+import { Label } from '@/components/ui/label';
 import { Controller } from 'react-hook-form';
 import {
 	Select,
@@ -8,6 +8,7 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from '@/components/ui/select';
+
 const SelectField: FC<SelectFieldProps> = ({
 	name,
 	label,
