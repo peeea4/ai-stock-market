@@ -12,14 +12,18 @@ import { useRouter } from 'next/navigation';
 import { Button } from './ui/button';
 import { LogOut } from 'lucide-react';
 import NavItems from './NavItems';
-const UserDropdown = () => {
+import { FC } from 'react';
+
+type Props = {
+	user: User;
+};
+
+const UserDropdown: FC<Props> = ({ user }) => {
 	const router = useRouter();
 
 	const handleSignOut = async () => {
 		router.push('/sign-in');
 	};
-
-	const user = { name: 'Nikita', email: 'mail@mail.com' };
 
 	return (
 		<DropdownMenu>
